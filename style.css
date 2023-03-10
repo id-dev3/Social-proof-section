@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #511f50;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+.pattern-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "first first first"
+      "second third fourth";
+    width: 72rem;
+}
+  
+.first {  
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "first-1 first-2";
+      align-items: center; 
+    grid-area: first;
+    margin-bottom: 2rem;
+}
+  
+.first-1 {
+    /* padding-right: 2.2rem; */
+    justify-self: start;
+    grid-area: first-1; 
+}
+  
+.first-2 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-areas:
+      "rate"
+      "rate-1"
+      "rate-2";
+    justify-items: end; 
+    grid-area: first-2;
+}
+  
+.rate { grid-area: rate; margin-bottom: 0.8rem; position: relative; right: 6rem; width: 24rem; }
+
+.rate-1 { grid-area: rate-1; margin-bottom: 0.4rem; position: relative; right: 3rem; }
+
+.rate-2 { grid-area: rate-2; }
+  
+.second {  
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "image bio bio"
+      "text text text";
+    grid-area: second;
+    height: 200px;
+}
+  
+.bio {
+    align-self: center;
+    grid-area: bio;
+}
+  
+.image {
+    align-self: center;
+    grid-area: image;
+}
+  
+.text { grid-area: text; }
+  
+.third {  
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "image1 bio1 bio1"
+      "text1 text1 text1";
+    grid-area: third;
+    height: 200px;
+    position: relative;
+    top: 15px;
+}
+  
+.image1 {
+    align-self: center;
+    grid-area: image1;
+}
+  
+.bio1 {
+    align-self: center;
+    grid-area: bio1;
+}
+  
+.text1 { grid-area: text1; }
+  
+.fourth {  
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "image2 bio2 bio2"
+      "text2 text2 text2";
+    grid-area: fourth;
+    position: relative;
+    top: 30px;
+    height: 200px;
+}
+
+.white {
+    color: #fff;
+}
+  
+.image2 {
+    align-self: center;
+    grid-area: image2;
+}
+  
+.bio2 {
+    align-self: center;
+    grid-area: bio2;
+}
+  
+.text2 { grid-area: text2; }
+
+h1 {
+    font-size: 4rem;
+    color: var(--main-color);
+    line-height: 0.9;
+    margin-bottom: 1.2rem;
+}
+
+p,span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.intro {
+    color: #8a7d88;
+}
+
+.rate,.rate-1,.rate-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: #f7f2f8;
+    border-radius: 15px;
+    color: var(--main-color);
+    height: 1.7rem;
+    padding: 1rem;
+}
+
+.rate img:nth-child(-n+5) {
+    margin-right: 0.370rem;
+}
+
+.rate-1 img:nth-child(-n+5) {
+    margin-right: 0.370rem;
+}
+
+.rate-2 img:nth-child(-n+5) {
+    margin-right: 0.370rem;
+}
+
+span {
+    margin-left: 1rem;
+}
+
+.second,.third,.fourth {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.img {
+    width: 3.5rem;
+    border-radius: 28px;
+}
+
+.verified {
+    font-size: 1rem;
+    color: #b25c94;
+    margin-top: 0.200rem;
+}
+
+.attribution a { 
+    color: hsl(228, 47%, 55%); 
+}
+
+footer {
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    color: #494646;
+}
+
+@media only screen and (max-width: 600px) {
+    /* main {
+        width: 100%;
+    } */
+    .pattern-top,.pattern-bottom {
+        display: none;
+    }
+    div.container {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "first"
+          "second"
+          "third"
+          "fourth";
+        margin-top: 3rem;
+        width: 330px;
+    }
+    .first { grid-area: first; }
+    
+    .second { grid-area: second; margin-left: 0.200rem; width: 280px;}
+    
+    .third { grid-area: third; margin-left: 0.200rem; width: 280px; }
+    
+    .fourth { grid-area: fourth; margin-left: 0.200rem; width: 280px; margin-bottom: 4rem; }
+    div.first {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "first-1"
+            "first-2";
+        width: 100%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .first-1 {
+        text-align: center;
+        width: 330px;
+        margin-bottom: 1rem;
+    }
+    .first-2 {
+        width: 330px;
+    }
+    .rate {
+        width: 298px;
+    }
+    .rate,.rate-1 {
+        right: 0;
+    }
+    .rate,.rate-1,.rate-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        margin-right: 0.480rem;
+      }
+      
+    .row-1, .row-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    .row-1 img {
+        margin-bottom: 0.500rem;
+    }
+    footer {
+        display: none;
+    }
+}
