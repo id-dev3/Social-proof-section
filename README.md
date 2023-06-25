@@ -1,20 +1,21 @@
 # Frontend Mentor Challenge | Social-proof-section
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Social proof section coding challenge](./design/Screenshot-of-my-own-design.png)
 
-The challenge was to build out this social proof section and get it looking as close to the design as possible. <br><br>
+This is the solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/build-a-social-proof-section-using-html-css-flexbox-css-grid-2-XqkEQyM8). Frontend Mentor challenges help us to improve our coding skills by building realistic projects. <br><br>
 
 ## Built with
 
-<ul>
-    <li>HTML</li>
-    <li>CSS (Flexbox & CSS Grid)</li>
-</ul>
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-You can preview it here ==> <a href="https://blackfury117.github.io/Social-proof-section/" target="_blank">Social proof section</a> <br><br>
+Preview it here - [Social proof section](https://blackfury117.github.io/Social-proof-section/) <br><br>
 
 ## Author
 
-Personal Website -- <a href="https://blackfury117.github.io/" target="_blank">Black Fury</a> <br>
-
-Frontend Mentor -- <a href="https://www.frontendmentor.io/profile/BlackFury117" target="_blank">@BlackFury117</a>
+- Website - [Black Fury](https://blackfury117.github.io/)
+- Frontend Mentor - [@BlackFury117](https://www.frontendmentor.io/profile/BlackFury117)
+- Twitter - [@blackfury117](https://twitter.com/blackfury117)
